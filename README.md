@@ -1,3 +1,5 @@
+Below are the accepted props for calendar
+
 | show-inline | Boolean | shows event in calendar inline with date (not in the tab)                                                      |
 |-------------|---------|----------------------------------------------------------------------------------------------------------------|
 | tabs        | Array   | [{ label: "Events", value: "events", slots: [{ type: "eventList", events: [] }] }]                             |
