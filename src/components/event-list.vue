@@ -10,7 +10,7 @@
         </li>
       </ul>
     </div>
-    <div v-if="!calendarEvents.length">
+    <div v-if="!inline && !calendarEventPresent">
         No Calendar event found
     </div>
   </div>
@@ -29,6 +29,11 @@ export default {
     currentDate: {
       type: String,
       required: true,
+    }
+  },
+  computed: {
+    calendarEventPresent() {
+      return this.calendarEvents.find(calendar => calendar.date === this.currentDate);
     }
   }
 }
