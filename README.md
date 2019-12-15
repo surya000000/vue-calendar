@@ -1,29 +1,5 @@
-# calendar
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| show-inline | Boolean | shows event in calendar inline with date (not in the tab)                                                      |
+|-------------|---------|----------------------------------------------------------------------------------------------------------------|
+| tabs        | Array   | [{ label: "Events", value: "events", slots: [{ type: "eventList", events: [] }] }]                             |
+| events      | Array   | [{ date: "2019-11-28",,bgColor: "red",,txtColor: "white", events: [{title: "World cup 2020",desc: "hello"}] }] |
+|             |         |                                                                                                                |
