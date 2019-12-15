@@ -2,14 +2,27 @@
   "name": "calendar",
   "version": "0.1.0",
   "private": true,
+  "main": "./dist/calendar.common.js",
   "scripts": {
+    "dev": "webpack-dev-server --port 8081 --config build/webpack.dev.config.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name calendar src/main.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
     "core-js": "^3.4.3",
-    "vue": "^2.6.10"
+    "css-loader": "^3.3.0",
+    "html-webpack-plugin": "^3.2.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.2",
+    "vue-style-loader": "^4.1.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
